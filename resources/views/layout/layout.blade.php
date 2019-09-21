@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="/dist/css/AdminLTE.min.css">
   <link rel="stylesheet" href="/dist/css/skins/_all-skins.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <!-- Datatables -->
+  <link href="/bower_components/dataTables/css/jquery.dataTables.min.css" rel="stylesheet">
+
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
   <div class="wrapper">    
@@ -28,6 +31,12 @@
   <!-- Bootstrap 3.3.7 -->
   <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="/dist/js/adminlte.min.js"></script>
+  <script src="/bower_components/dataTables/js/jquery.dataTables.js"></script>  
+  <script>
+    $('#table').DataTable({ responsive: true });
+    $('#table').attr('style', 'border-collapse: collapse !important');
+  </script>
+  <script src="/bower_components/dataTables/js/script.js"></script>
 </body>
 
 </html>

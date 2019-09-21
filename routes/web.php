@@ -21,7 +21,7 @@ Route::get('recuperar', function () {
 
 
 Route::get('login', function () {
-    
+
     return view('home');
 });
 Route::get('home', function () {
@@ -34,3 +34,13 @@ Route::get('perfil', function () {
 Route::get('cambiarClave', function () {
     return view('perfil-clave');
 });
+
+
+Route::get('usuarios', function () {
+    
+    return view('listarUsuarios');
+});
+Route::get('/', ['as' => 'cerrarSesion', function () {
+    
+    return view('index');
+}]);

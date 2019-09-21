@@ -21,7 +21,7 @@
           </a>
         </li>
         <li class="dropdown tasks-menu">
-          <a href="/" title="Salir">
+          <a href="{{ route('cerrarSesion') }}" title="Salir">
             <i class="fa fa-sign-out">&nbsp;Salir</i>
             <!-- <span class="label label-danger">9</span> -->
           </a>
