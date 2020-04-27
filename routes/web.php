@@ -12,35 +12,33 @@
 */
 
 Route::get('/', function () {
-    return view('index');
-});
-Route::get('recuperar', function () {
-    return view('recuperar');
-});
-
-
-
-Route::get('login', function () {
-
     return view('home');
 });
-Route::get('home', function () {
-    return view('home');
-});
-Route::get('perfil', function () {
-    return view('perfil');
-});
+// Route::get('recuperar', function () {
+//     return view('recuperar');
+// });
 
-Route::get('cambiarClave', function () {
-    return view('perfil-clave');
-});
+// Route::get('login', function () {
+
+//     return view('home');
+// });
+// Route::get('home', function () {
+//     return view('home');
+// });
+// Route::get('perfil', function () {
+//     return view('perfil');
+// });
+
+// Route::get('cambiarClave', function () {
+//     return view('perfil-clave');
+// });
 
 
-Route::get('usuarios', function () {
+// Route::get('usuarios', function () {
     
-    return view('listarUsuarios');
-});
-Route::get('/', ['as' => 'cerrarSesion', function () {
+//     return view('listarUsuarios');
+// });
+Route::get('home', ['as' => 'cerrarSesion', function () {
     
     return view('index');
 }]);
